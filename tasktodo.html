@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="tasktodo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>My To Do List</h1>
+    </header>
+    <main>
+        <div class="box">
+            <p id="totaltask">Total Tasks:0 </p>
+            <p id="completed">Completed: 0</p>
+            <p id="pending">Pending: 0</p>
+        </div>
+        <div class="task">
+            <div id="contain">
+                <input type="text" id="input" placeholder="enter your task">
+                <button id="btn">Add</button>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Done</th>
+                            <th>Daily Task</th>
+                            <th>Priority</th>
+                            <th>Date & Time</th>
+                            <th>Edit</th>
+                            <th>Not Done</th>  
+                        </tr>
+                    </thead>
+                    <tbody id="tasklist">
+                        
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button class="del">delete</button>
+    </footer>
+    <script src="tasktodo.js"></script>
+</body>
+</html>
+
